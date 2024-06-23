@@ -8,9 +8,9 @@ import (
 )
 
 func ExtractMetadata[T proto.Message](msg protoreflect.Message, target T) (T, error) {
-	credentials, err := protomessage.ExtractProtoMessage(msg, "resource_input.metadata", target)
+	metadata, err := protomessage.ExtractProtoMessage(msg, "resource_input.metadata", target)
 	if err != nil {
 		return target, fmt.Errorf("failed to extract metadata: %v", err)
 	}
-	return credentials, nil
+	return metadata, nil
 }
