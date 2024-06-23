@@ -2,7 +2,7 @@ package apiresource
 
 import (
 	"fmt"
-	"github.com/plantoncloud/pulumi-blueprint-commons/pkg/input/protomessage"
+	"github.com/plantoncloud/pulumi-blueprint-commons/pkg/planton/input/protomessage"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
